@@ -1,34 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Dashboard</title>
+  <meta charset="UTF-8">
+  <title>Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-    body {
-      background: #000;
+    html, body {
+      margin: 0;
+      padding: 0;
+      background-color: #000;
       color: #E0E0E0;
       font-family: monospace;
-      text-align: center;
-      margin-top: 15%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      filter: grayscale(100%);
     }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5em;
+    }
+
     a {
       color: #AAAAAA;
-      display: block;
-      margin: 10px;
-      font-size: 1.5em;
       text-decoration: none;
+      font-size: 1.7em;
+      transition: color 0.2s ease;
     }
+
     a:hover {
       color: #FFFFFF;
     }
   </style>
 </head>
 <body>
-  <h1>~ Welcome ~</h1>
-  <a href="https://reddit.com">Reddit</a>
-  <a href="https://youtube.com">YouTube</a>
-  <a href="https://github.com">GitHub</a>
-  <a href="https://chat.openai.com">ChatGPT</a>
+  <div class="links">
+    <a href="https://youtube.com" target="_blank">YouTube</a>
+    <a href="https://chat.openai.com" target="_blank">ChatGPT</a>
+    <a href="https://github.com" target="_blank">GitHub</a>
+    <a href="https://nearpeer.org" target="_blank">Nearpeer</a>
+  </div>
 </body>
 </html>
-
